@@ -1,5 +1,6 @@
 import base64
 import hashlib
+from os import makedev
 import zlib
 import re
 import tempfile
@@ -115,6 +116,8 @@ class KrokiPlugin(BasePlugin):
         return f"![Kroki](./{ pref }/{ filename })"
 
     def on_page_markdown(self, markdown, files, page, **kwargs):
+        markdown = markdown.replace('```viz','```graphviz')
+        markdown = markdown.replace('```dot','```graphviz')
         pattern = re.compile(self.kroki_re, flags=re.IGNORECASE + re.DOTALL)
 
         if not self.config["DownloadImages"]:
