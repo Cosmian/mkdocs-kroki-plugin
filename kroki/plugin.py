@@ -76,7 +76,7 @@ class KrokiPlugin(BasePlugin):
             self.kroki_re += "|" + "|".join(self.kroki_excalidraw)
         if self.config['EnableMermaid']:
             self.kroki_re += "|" + "|".join(self.kroki_mermaid)
-        self.kroki_re = r'(?:```kroki-)(' + self.kroki_re + ')\n(.*?)(?:```)'
+        self.kroki_re = r'(?:```)(' + self.kroki_re + ')\n(.*?)(?:```)'
 
         self._dir = tempfile.TemporaryDirectory(prefix="mkdocs_kroki_")
         self._output_dir = pathlib.Path(config.get("site_dir", "site"))
