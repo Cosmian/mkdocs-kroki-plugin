@@ -31,8 +31,6 @@ plugins:
 
 ## Usage
 
-Use code-fences with a tag of kroki-`<Module>` to replace the code with the wanted diagram.
-
 Example for BlockDiag:
 
 ````markdown
