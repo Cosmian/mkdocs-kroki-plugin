@@ -6,7 +6,7 @@ This is a MkDocs plugin to embed Kroki-Diagrams into your documentation.
 
 Install the plugin using pip:
 
-`pip install mkdocs-kroki-plugin`
+`pip install git+https://github.com/Cosmian/mkdocs-kroki-plugin.git`
 
 Activate the plugin in `mkdocs.yml`:
 
