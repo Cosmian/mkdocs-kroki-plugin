@@ -3,7 +3,9 @@
 This is a MkDocs plugin to embed Kroki-Diagrams into your documentation.
 
 > ⚠️ This is a modified fork
-The main difference from the original repo is that it removes the `kroki-`prefix in the makdown.
+The main differences from the original repo are 
+ - it removes the `kroki-`prefix in the makdown.
+ - `dot` and `viz` are supported in addition to `graphviz`
 
 ## Setup
 
