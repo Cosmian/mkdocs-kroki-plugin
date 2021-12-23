@@ -2,6 +2,9 @@
 
 This is a MkDocs plugin to embed Kroki-Diagrams into your documentation.
 
+> ⚠️ This is a modified fork
+The main difference from the original repo is that it removes the `kroki-`prefix in the makdown.
+
 ## Setup
 
 Install the plugin using pip:
@@ -33,7 +36,7 @@ Use code-fences with a tag of kroki-`<Module>` to replace the code with the want
 Example for BlockDiag:
 
 ````markdown
-```kroki-blockdiag
+```blockdiag
 blockdiag {
   blockdiag -> generates -> "block-diagrams";
   blockdiag -> is -> "very easy!";
